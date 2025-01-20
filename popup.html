@@ -1,0 +1,38 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ReadRight</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <h2>ReadRight</h2>
+
+    <div class="separator-dotted"></div>
+
+    <div id="msg" class="hidden-default">
+        <p>No reading content found.</p>
+        <div class="separator-dotted"></div>
+    </div>
+
+    <div id="content" class="hidden-default">
+        <h3>Reading Time</h3>
+        <p id="readingTime"></p>
+    
+        <h3>Word Count</h3>
+        <p id="wordCounter"></p>
+        <div class="separator-dotted"></div>
+    </div>
+    
+    <div id="readingSpeedContainer">
+        <input id="readingSpeed" type="number" placeholder="300" default="300">
+        <span>WPM</span>
+    </div>
+
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

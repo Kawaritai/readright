@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "ReadRight",
+    "description": "Show word count and reading time for web pages.",
+    "version": "1.0",
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon.png",
+            "32": "icon.png"
+        },
+        "default_title": "ReadRight"
+    }
+}
