@@ -20,15 +20,21 @@
     <div id="content" class="hidden-default">
         <h3>Reading Time</h3>
         <p id="readingTime"></p>
-    
+
         <h3>Word Count</h3>
         <p id="wordCounter"></p>
         <div class="separator-dotted"></div>
     </div>
-    
-    <div id="readingSpeedContainer">
-        <input id="readingSpeed" type="number" placeholder="300" default="300">
-        <span>WPM</span>
+
+    <div id="footerContainer">
+        <div>
+            <input id="invertIcon" type="checkbox" default="false">
+            <label for="invertIcon"></label> <!-- Suppress label warning -->
+        </div>
+        <div>
+            <input id="readingSpeed" type="number" placeholder="300" default="300">
+            <span for="readingSpeed">WPM</span>
+        </div>
     </div>
 
 

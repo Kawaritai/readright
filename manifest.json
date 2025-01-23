@@ -4,12 +4,14 @@
     "description": "Show word count and reading time for web pages.",
     "version": "1.0",
     "icons": {
-        "16": "icon.png",
-        "32": "icon.png",
-        "48": "icon.png"
+        "16": "icon-dark.png",
+        "32": "icon-dark.png",
+        "48": "icon-dark.png"
     },
     "permissions": [
-        "tabs"
+        "tabs",
+        "storage",
+        "activeTab"
     ],
     "background": {
         "service_worker": "background.js",
@@ -28,8 +30,8 @@
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "icon.png",
-            "32": "icon.png"
+            "16": "icon-dark.png",
+            "32": "icon-dark.png"
         },
         "default_title": "ReadRight"
     }
